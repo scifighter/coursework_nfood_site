@@ -49,14 +49,17 @@
 }
 .menuItem {
     text-shadow: 3px 3px 3px black;
+    text-decoration: none;
     color: white;
-    text-align: center  ;
+    text-align: center;
     outline: 3px solid gray;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
 }
 .menuItem:hover {
+    color: white;
+    text-decoration: none;
     transition-duration: 300ms;
     outline: 3px solid white;
 }
@@ -67,6 +70,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     background-color: gray;
 }
 .activeUnit {
@@ -96,7 +100,62 @@ input[type="submit" i] {
     margin: auto;
 }
 .itemGood {
-    width: 300px;
-    height: 500px;
-    background-color: gray;
+    transition-duration: 300ms;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 200px;
+    height: 250px;
+    background-color: black;
+    color: wheat;
+    margin: 20px;
+    text-align: center;
+}
+.itemInfo {
+    display: flex;
+    transition-duration: 300ms;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 200px;
+    width: 199x;
+    height: 49px;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+.itemName {
+    margin-left: 50px;
+    color: grey;
+    width: 100px;
+    hyphens: auto;
+    word-break: break-all;
+    text-align: center;
+}
+.itemGood:hover .itemInfo {
+    transition-duration: 300ms;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.itemGood:hover .itemName {
+    transition-duration: 300ms;
+    color: white;
+}
+.itemGood:hover .itemCost {
+    transition-duration: 300ms;
+    border: 1px solid white;
+}
+.itemCost:hover {
+    background-color: white;
+    color: black;
+}
+.itemCost {
+    border: 1px solid black;
+    transition-duration: 300ms;
+    display: inline;
+    position: relative;
+    border-radius: 10px;
+    top: 20px;
+    height: 25px;
+    width: 45px;
+    background-color: black;
+}
+a {
+    text-decoration: none !important;
 }
