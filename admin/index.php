@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="ru">
-<?php 
-require_once 'head.php'; 
-include 'dbConnect.php';
-?>
-<body>
-    <?php require_once 'header.php';?>
-    <div class = "container wrapper">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Страница</title>
+        <meta charset="utf-8">
+        <?php include '../dbConnect.php'; require_once '../head.php'?>
+    </head>
+    <body>
+        <div class = "container wrapper">
         <?php
             $sql = "SELECT id, name, cost, picture FROM goods ORDER BY id";
             if($result = $connect->query($sql)){
@@ -33,5 +33,6 @@ include 'dbConnect.php';
                 }
             }
         ?>
-</body>
+        </div>
+    </body>
 </html>

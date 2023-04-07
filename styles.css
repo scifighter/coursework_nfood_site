@@ -125,7 +125,6 @@ input[type="submit" i] {
     color: grey;
     width: 100px;
     hyphens: auto;
-    word-break: break-all;
     text-align: center;
 }
 .itemGood:hover .itemInfo {
@@ -146,6 +145,7 @@ input[type="submit" i] {
     color: black;
 }
 .itemCost {
+    font-size: 14px;
     border: 1px solid black;
     transition-duration: 300ms;
     display: inline;

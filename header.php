@@ -40,7 +40,7 @@
                     Новости
                 </div>
                 </a>
-                <a class = "col-sm" href = "index.php">
+                <a class = "col-sm" href = "admin/index.php">
                 <div class="menuItem">
                     Популярные товары
                 </div>
