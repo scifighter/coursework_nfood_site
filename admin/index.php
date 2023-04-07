@@ -20,7 +20,7 @@
             
                     $goodPic = $row["picture"];
                     
-                    echo "<div class = 'itemGood'>";
+                    echo "<div style = 'background-image: url(/img/goods/".$row["picture"].");' class = 'itemGood'>";
                     echo "<div class = 'itemInfo'>";
                     echo "<div class = 'itemName'>";
                     echo $row["name"];
