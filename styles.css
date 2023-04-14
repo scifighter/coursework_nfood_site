@@ -159,3 +159,105 @@ input[type="submit" i] {
 a {
     text-decoration: none !important;
 }
+
+.adminItem {
+    display: flex;
+    transition-duration: 300ms;
+    border: 1px solid white;
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    color: wheat;
+    margin: 20px;
+    text-align: center;
+}
+.adminItemId {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 18%;
+    hyphens: auto;
+    margin: auto;
+
+}
+.adminItemName {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 18%;
+    hyphens: auto;
+    margin: auto;
+    vertical-align: middle;
+}
+.adminItemCategory {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 18%;
+    hyphens: auto;
+    margin: auto;
+}
+.adminItemCost {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 18%;
+    hyphens: auto;
+    margin: auto;
+}
+.adminItemPicture {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 18%;
+    hyphens: auto;
+    margin: auto;
+}
+.adminItemDelete {
+    cursor: pointer;
+    height: 100px;
+    border: 1px solid gray;
+    color: orange;
+    text-decoration: underline;
+    width: 10%;
+    hyphens: auto;
+    margin: auto;
+}
+.adminGoodAdding {
+    display: flex;
+    transition-duration: 300ms;
+    border: 1px solid white;
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    color: wheat;
+    margin: 20px;
+    text-align: center;
+}
+.addGoodBlock {
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 22%;
+    hyphens: auto;
+    margin: auto;
+}
+.addGoodBlockCost {
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.addGoodBlockADD {
+    height: 100px;
+    border: 1px solid gray;
+    color: white;
+    width: 12%;
+    hyphens: auto;
+    margin: auto;
+}
+.error {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
