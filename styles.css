@@ -261,3 +261,13 @@ a {
     margin: 20px;
     text-decoration: none;
 }
+.cat {
+    width: 30%;
+}
+.catAdd {
+    width: 45%;
+}
+.addCatText {
+    padding-left: 100px;
+    padding-right: 100px;
+}
