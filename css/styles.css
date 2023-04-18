@@ -1,9 +1,78 @@
 .input-group {
     width: 50%;
 }
+.userInfo {
+    width: 40%;
+    height: auto;
+    background-color: gray;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 5%;
+    border-radius: 20px;
+    position: relative;
+    right: 5%;
+}
+.username {
+    padding: 20px;
+}
+.userlevel {
+    padding: 20px;
+}
 .header {
-    background-image: url("img/backgrounds/headerBG.jpg");
+    background-image: url("/img/backgrounds/headerBG.jpg");
     height: 300px;
+}
+.message {
+    transition-duration: 300ms;
+    text-align: center;
+    width: 25%;
+    outline: 3px solid orange;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.message:hover {
+    cursor: default;
+    transition-duration: 300ms;
+    outline: 3px solid rgb(255, 208, 0);
+}
+.message::selection {
+    cursor: default;
+    background: transparent;
+}
+::-moz-selection {
+    cursor: default;
+    background: transparent;
+ }
+input::-webkit-input-placeholder { color:  rgb(151, 151, 151); }
+input::-moz-placeholder { color: rgb(151, 151, 151); }
+
+.regButton {
+    transition-duration: 300ms;
+    border: 0px;
+    outline: 0px;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    color: darkslategray !important;
+}
+.regButton:hover {
+    transition-duration: 300ms;
+    background-color: #919191;
+}
+.regAuthField {
+    font-size: 12pt;
+    transition-duration: 300ms;
+    border: 1px solid #d2d4d6;
+    border-bottom: 2px solid #bfbfbf;
+    text-align: center;
+    background-color: #d2d4d6 !important;
+}
+.regAuthField:focus {
+    transition-duration: 300ms;
+    outline: 0px;
+    border-bottom: 2px solid gray;
 }
 .registrationUnit {
     text-shadow: 2px 2px 2px black;
@@ -16,12 +85,41 @@
     padding: 8px;
     border-radius: 20px;
     text-align: center;
-    outline: 3px solid gray;
+    outline: 3px solid grey;
     transition-duration: 300ms;
 }
 .registrationUnit:hover {
     transition-duration: 300ms;
     outline: 3px solid white;
+}
+.toShoppingBasket {
+    margin: 5%;
+    transition-duration: 300ms;
+    position: relative;
+}
+.toShoppingBasket:hover .baskettext {
+    transition-duration: 300ms;
+    color: aqua !important;
+    text-shadow: 2px 2px 2px black;
+}
+.basketicon {
+    width: 100px;
+    height: 100px;
+}
+.adminicon {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    width: 90px;
+    height: 100px;
+}
+.baskettext {
+    text-shadow: 2px 2px 2px white;
+    color: black;
+    transition-duration: 300ms;
+    position: relative;
+    right: 2%;
+    font-size: 16pt;
 }
 .title {
     color: aliceblue;
@@ -45,7 +143,8 @@
     outline: 3px solid lightblue;
 }
 .container {
-    padding-top: 50px;
+    padding-top: 20px;
+    min-height: 420px;
 }
 .menuItem {
     text-shadow: 3px 3px 3px black;
@@ -71,7 +170,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background-color: gray;
+    background-color: #d2d4d6;
 }
 .activeUnit {
     background-color: antiquewhite;
@@ -98,6 +197,9 @@
 }
 input[type="submit" i] {
     margin: auto;
+    background: transparent;
+    border: 0px;
+    color: white;
 }
 .itemGood {
     transition-duration: 300ms;
@@ -270,4 +372,73 @@ a {
 .addCatText {
     padding-left: 100px;
     padding-right: 100px;
+}
+.counter {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #919191;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 3px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.basketButtons {
+    margin-right: 20px;
+    width: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.basket {
+    position: relative;
+    top: -80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    font-size: 22pt;
+}
+.basketEmpty {
+    position: relative;
+    top: -240px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    font-size: 22pt;
+}
+.basketSubmit {
+    margin: 10px !important;
+    transition-duration: 200ms;
+}
+.basketSubmitImg {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.basketSubmitButton {
+    margin-top: 5px !important;
+    transition-duration: 200ms;
+    text-shadow: 2px 2px 2px black;
+    background-color: gray;
+    border-bottom: 1px solid black !important;
+}
+.basketSubmitButton:hover {
+    transition-duration: 200ms;
+    border-radius: 5px;
+    background-color: darkgray;
+    border-bottom: 1px solid darkgray !important;
+}
+.basketSubmitBlock {
+    position: absolute;
+    width: 200px;
+    left: 85%;
+    top: 397px;
+    padding: 10px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
 }

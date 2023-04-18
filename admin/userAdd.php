@@ -13,7 +13,7 @@
 
     $name = $_POST["name"];
 
-    $password = $_POST["password"];
+    $password = md5($_POST["password"]);
 
     $userLevelText = $_POST["level"];
 
